@@ -19,5 +19,11 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
+
+        //open view for quizzes
+        public ActionResult BaeQuizzes()
+        {
+            return View();
+        }
     }
 }

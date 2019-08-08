@@ -9,7 +9,7 @@ namespace BeaCoach.Controllers
     public class BeaCoachController : Controller
     {
         // GET: BeaCoach
-        public ActionResult Index()
+        public ActionResult BaeLogin()
         {
             return View();
         }
@@ -22,6 +22,15 @@ namespace BeaCoach.Controllers
 
         //open view for quizzes
         public ActionResult BaeQuizzes()
+        {
+            return View();
+        }
+
+        public ActionResult BaeSignUp()
+        {
+            return View();
+        }
+        public ActionResult BaeHome()
         {
             return View();
         }

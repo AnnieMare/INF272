@@ -1,0 +1,123 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign-Up</title>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <style>
+        input {
+            border-radius: 5px;
+        }
+
+        td {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+        }
+
+        h1, h2, p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bae Coach</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Date Ideas</a></li>
+                            <li><a href="#">Horoscope</a></li>
+                            <li><a href="#">My Journal</a></li>
+                            <li><a href="#">Quizzes</a></li>
+                            <li><a href="#">Messenger</a></li>
+                            <li><a href="#">Gifts</a></li>
+                            <li><a href="#">Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <table align="center" style="padding:5px;width:70%">
+        <tr>
+            <td>
+                <div style="border-left: 6px solid #ea0a83; border-radius:15px; background-color:lightpink; width:180%;height:20%;text-align:center;float:inherit">
+                    <h1 style="color:black; font-family: 'Sofia'">Bae Poll</h1>
+                    <br />
+                    <p><b>What is your ideal first date?</b></p>
+                    <table align="center">
+                        <tr>
+                            <td><input id="Text1" type="text" value="Coffee Date" style="background-color:orange" readonly /></td>
+                            <td><input id="Radio1" type="radio" /></td>
+                        </tr>
+                        <tr>
+                            <td><input id="Text1" type="text" value="Picnic under the stars" style="background-color:yellow" readonly /></td>
+                            <td><input id="Radio1" type="radio" /></td>
+                        </tr>
+                        <tr>
+                            <td><input id="Text1" type="text" value="dd/mm/yyyy" style="background-color:lightgreen" readonly /></td>
+                            <td><input id="Radio1" type="radio" /></td>
+                        </tr>
+                        <tr>
+                            <td><input id="Text1" type="text" value="48th LAN Marathon" style="background-color:lightblue" readonly /></td>
+                            <td><input id="Radio1" type="radio" /></td>
+                        </tr>
+                    </table>
+
+                    <br />
+                </div>
+            </td>
+            <td></td>
+            <td style="text-align:right">
+                <div style="border-left: 6px solid #ea0a83; border-radius:15px; background-color:lightpink; width:110%;height:60%;text-align:center; margin-right:300px;float:unset">
+                    <h1 style="color:black; font-family: 'Sofia'">Daily Quote</h1>
+                    <br />
+                    <p style="color:black; font-family: 'Marigold'">Love is friendship set on fire. <br />-Jeremy Taylor</p>
+                    <br />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="padding-left:35px;">
+                <div style="border-left: 6px solid #ea0a83; border-radius:15px; background-color:lightpink; width:150%;height:20%;text-align:center; float:inherit">
+                    <h1 style="color:black; font-family: 'Sofia'">Daily Meme</h1>
+                    <br />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXWpdxnwJcu16iy19IhdemdCycz7-QPs-bXBUtZ6b0DL0AmjWISQ" alt="Daily Meme" />
+                    <br /><br /><br>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>

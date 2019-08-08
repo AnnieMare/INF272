@@ -59,7 +59,7 @@
             </nav>
 
             <center>
-                <div style="width: 50%">
+                <div style="width: 50%; color:white">
                     <center><h1 style="font-family: 'Sofia'">Bae Journal</h1></center>
                     <br />
                     <div style="float:right">
@@ -71,13 +71,25 @@
                     <div>
                         <lable style="float:left">Dear Diary,</lable>
                         <br />
-                        <textarea rows="20" cols="100"></textarea>
+                        <textarea rows="15" cols="100"></textarea>
                     </div>
                     <div class="btn-group" style="float:right">
                         <button type="button" class="btn btn-primary" style="background-color:darkred; border-color:black">Email To Me</button>
-                        <button type="button" class="btn btn-primary"  style="background-color:darkred; border-color:black">Submit</button>
-                        
+                        <button type="button" class="btn btn-primary" style="background-color:darkred; border-color:black">Submit</button>
+
                     </div>
+                    <br />
+                    <div>
+                        <h3>Find an Entry:</h3>
+                        <br />
+                        <lable for="From"><strong>From: </strong></lable><input type="date" name="From" id="EntryDate" />
+                        <lable for="To"><strong>To: </strong></lable><input type="date" name="To" id="EntryDate" />
+                        <br />
+                        <br />
+                        <button type="button" class="btn btn-primary" style="background-color:darkred; border-color:black">Find Entry</button>
+
+                    </div>
+                
                 </div>
             </center>
             

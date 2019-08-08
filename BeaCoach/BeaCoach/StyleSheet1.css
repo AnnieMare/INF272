@@ -1,7 +1,7 @@
 ﻿body {
-    background: rgb(214,8,91);
-    background: linear-gradient(90deg, rgba(214,8,91,1) 0%, rgba(242,78,155,1) 58%, rgba(255,117,220,1) 100%);
-}
+    background: rgb(168,29,86);
+    background: linear-gradient(to right, rgba(168,29,86,1) 50%, rgba(255,154,154,1) 100%);
+    }
 /* Style The Dropdown Button */
 .dropbtn {
     background-color: gray;
@@ -50,3 +50,14 @@
 .dropdown:hover .dropbtn {
     background-color: red;
 }
+
+.buttonLogin {
+    background-color: white;
+    color: black;
+    border: 2px solid #956880;
+    border-radius: 10px;
+}
+
+    .buttonLogin:hover {
+        background-color: #956880;
+    }

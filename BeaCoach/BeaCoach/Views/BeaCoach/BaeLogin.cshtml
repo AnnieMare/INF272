@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BaeLogin</title>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <style>
+        label, p {
+            color: white;
+        }
+
+        body {
+            background: rgb(168,29,86);
+            background: linear-gradient(to right, rgba(168,29,86,1) 50%, rgba(255,154,154,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bae Coach</a>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <center><h1 style="color:lightpink; font-family: 'Sofia'">Welcome to Bae Coach.</h1></center>
+    <br />
+    <div style="border-left: 6px solid #ea0a83; border-radius:15px; background-color:lightpink; width:50%;text-align:center; margin:auto">
+        <br />
+        <table align="center" width:75%;>
+            <tr>
+                <td style="text-align:left; padding:10px;">Email:</td>
+                <td style="text-align:right"><input id="txtEmail" type="text" name="email" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:left; padding:10px;">Password:</td>
+                <td style="text-align:right"><input id="txtPassword" type="text" name="password" /></td>
+            </tr>
+        </table>
+        <br />
+        <input id="btnSubmit" type="submit" value="Login" class="buttonLogin" /><br /><br />
+    </div>
+    <br />
+    <div style=" text-align:center">
+        <p>Don't have an Account? <a href="#" style="color:lightpink;">Sign-Up</a></p>
+    </div>
+</body>
+</html>

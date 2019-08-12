@@ -34,5 +34,10 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
+
+        public ActionResult UpdateInfo()
+        {
+            return View();
+        }
     }
 }

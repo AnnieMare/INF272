@@ -1,0 +1,119 @@
+﻿
+
+@{
+    ViewBag.Title = "BaeCalender";
+}
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <script src="~/JavaScript.js"></script>
+    <title>BaeCalender</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bae Coach</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Date Ideas</a></li>
+                            <li><a href="#">Horoscope</a></li>
+                            <li><a href="#">My Journal</a></li>
+                            <li><a href="#">Quizzes</a></li>
+                            <li><a href="#">Messenger</a></li>
+                            <li><a href="#">Gifts</a></li>
+                            <li><a href="#">Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <h1 style="font-family: 'Sofia'">Bae Calender</h1>
+    </center>
+
+    <div class="content">
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="year-header">
+                    <span class="left-button" id="prev"> &lang; </span>
+                    <span class="year" id="label"></span>
+                    <span class="right-button" id="next"> &rang; </span>
+                </div>
+                <table class="months-table">
+                    <tbody>
+                        <tr class="months-row">
+                            <td class="month">Jan</td>
+                            <td class="month">Feb</td>
+                            <td class="month">Mar</td>
+                            <td class="month">Apr</td>
+                            <td class="month">May</td>
+                            <td class="month">Jun</td>
+                            <td class="month">Jul</td>
+                            <td class="month">Aug</td>
+                            <td class="month">Sep</td>
+                            <td class="month">Oct</td>
+                            <td class="month">Nov</td>
+                            <td class="month">Dec</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="days-table">
+                    <tr>
+                        <td class="day">Sun</td>
+                        <td class="day">Mon</td>
+                        <td class="day">Tue</td>
+                        <td class="day">Wed</td>
+                        <td class="day">Thu</td>
+                        <td class="day">Fri</td>
+                        <td class="day">Sat</td>
+                    </tr>
+
+                </table>
+                <div class="frame">
+                    <table class="dates-table">
+                        <tbody class="tbody"></tbody>
+                    </table>
+                </div>
+                <button class="button" id="add-button">Add Event</button>
+            </div>
+        </div>
+        <div class="events-container">
+        </div>
+        <div class="dialog" id="dialog">
+            <h2 class="dialog-header"> Add Event </h2>
+            <form class="form" id="form">
+                <div class="form-container" align="center">
+                    <label class="form-label" id="valueFromMyButton" for="name">What is happening?</label>
+                    <input class="input" type="text" id="name" maxlength="36">
+                    <label class="form-label" id="valueFromMyButton" for="count">Rank Priority (1-10) </label>
+                    <input class="input" type="number" id="count" min="0" max="10" maxlength="2">
+                    <input type="button" value="Cancel" class="button" id="cancel-button">
+                    <input type="button" value="Add" class="button" id="ok-button">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Dialog Box-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>

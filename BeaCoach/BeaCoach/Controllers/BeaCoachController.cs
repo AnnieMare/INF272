@@ -39,5 +39,17 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
+
+        public ActionResult DateIdeas()
+        {
+            return View();
+        }
+
+        public ActionResult RomanticDinner()
+        {
+            return View();
+        }
+
+
     }
 }

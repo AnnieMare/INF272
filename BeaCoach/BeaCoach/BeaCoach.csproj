@@ -175,6 +175,7 @@
     <Content Include="Views\BeaCoach\BaeScopes.cshtml" />
     <Content Include="Views\BeaCoach\DateIdeas.cshtml" />
     <Content Include="Views\BeaCoach\RomanticDinner.cshtml" />
+    <Content Include="Views\BeaCoach\FindJournalEntry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -20,6 +20,12 @@ namespace BeaCoach.Controllers
             return View();
         }
 
+        //Open View for found Journal
+        public ActionResult FindJournalEntry()
+        {
+            return View();
+        }
+
         //open view for quizzes
         public ActionResult BaeQuizzes()
         {

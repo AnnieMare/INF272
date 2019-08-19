@@ -3,11 +3,11 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
 
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
     <link href="~/StyleSheet1.css" rel="stylesheet" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,75 +16,107 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 
-    <title>FindJournalEntry</title>
+
+
+    <title>Bea Coach</title>
 </head>
 <body>
-    <div>
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Bae Coach</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Date Ideas</a></li>
-                                <li><a href="#">Horoscope</a></li>
-                                <li><a href="#">My Journal</a></li>
-                                <li><a href="#">Quizzes</a></li>
-                                <li><a href="#">Messenger</a></li>
-                                <li><a href="#">Gifts</a></li>
-                                <li><a href="#">Planner</a></li>
-                            </ul>
-                        </li>
-                        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bae Coach</a>
             </div>
-        </nav>
-        <div class="panel-heading">
-            <center><h1>Entries found:</h1></center>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("DateIdeas", "BeaCoach")">Date Ideas</a></li>
+                            <li><a href="@Url.Action("BaeScopes", "BeaCoach")">Horoscope</a></li>
+                            <li><a href="@Url.Action("BaeJournal", "BeaCoach")">My Journal</a></li>
+                            <li><a href="@Url.Action("BaeQuizzes", "BeaCoach")">Quizzes</a></li>
+                            <li><a href="@Url.Action("BaeGifts", "BeaCoach")">Gifts</a></li>
+                            <li><a href="@Url.Action("BaeAdvice", "BeaCoach")">Advice</a></li>
+                            <li><a href="@Url.Action("Calender", "BeaCoach")">Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("BaeProfile", "BeaCoach")"> View User Profile</a></li>
+                            <li><a href="@Url.Action("UpdateInfo", "BeaCoach")">Update User Profile</a></li>
+                            <li><a href="#">Log Out</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <center>
-            <div>Aug 14, 2019, 8:23 AM</div>
-            <div style="width: 50%; background-color:white">
-                <div style="float:left">Dear Diary,</div>
-                <br />
-            The rotation of the earth really makes my day!
-            Today my sons math teacher  told him he was average... I think he just mean!
-            But did you hear about the kidnapping at school? its fine, he woke up....
+    <center>
+        <div style="width: 50%; color:white">
+            <center><h1 style="color:lightpink; font-family: 'Sofia'">Bae Journal</h1></center>
+            <br />
+            <div style="float:right">
+                <lable for="EntryDate"><strong>Date: </strong></lable><input type="date" name="EntryDate" id="EntryDate" readonly />
+            </div>
+            <br />
+            <br />
 
-            The afternoon I saw a fat psychic, people say she is a four-chin teller...
-            and right after that I thought about going on an all-almond diet. But that's just nuts...
+            <div style="text-align: left">
+                <lable style="float:left">Dear Diary,</lable>
+                <br /><br />
+                <p style="color:white; float:left">
+                    The rotation of the earth really makes my day!<br />
+                    Today my sons math teacher  told him he was average... I think he just mean!<br />
+                    But did you hear about the kidnapping at school? its fine, he woke up....<br />
+                    <br />
+                    The afternoon I saw a fat psychic, people say she is a four-chin teller...<br />
+                    and right after that I thought about going on an all-almond diet. But that's just nuts...<br />
+                    <br />
+                    I then stopped by the shop to buy velcro, but decided to leave it, it was a total rip-off.<br />
+                    <br />
+                    When I got home I watched a program about beavers. It was the best dam program I've ever seen.<br />
+                    <br />
+                    I also  went to a bar last night and saw that people don't like having to bend over to get their drinks. We really need to raise the bar.<br />
+                    <br />
+                    Talk to you tomorrow! Bye!
+                </p>
+            </div>
+            <div class="btn-group" style="float:right">
+                <button type="button" class="btn btn-primary" style="background-color:darkred; border-color:black">Email To Me</button>
+                <button type="button" class="btn btn-primary" style="background-color:darkred; border-color:black">Back</button>
 
-            I then stopped by the shop to buy velcro, but decided to leave it, it was a total rip-off.
+            </div>
+            <br />
 
-            When I got home I watched a program about beavers. It was the best dam program I've ever seen.
 
-            I also  went to a bar last night and saw that people don't like having to bend over to get their drinks. We really need to raise the bar.
-
-            Talk to you tomorrow! Bye!
         </div>
-        </center>
-    </div>
+    </center>
+
+
 </body>
+
 </html>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
 

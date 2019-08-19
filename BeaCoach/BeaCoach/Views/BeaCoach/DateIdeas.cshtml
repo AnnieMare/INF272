@@ -44,10 +44,42 @@
                 </button>
                 <a class="navbar-brand" href="#">Bae Coach</a>
             </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("DateIdeas", "BeaCoach")">Date Ideas</a></li>
+                            <li><a href="@Url.Action("BaeScopes", "BeaCoach")">Horoscope</a></li>
+                            <li><a href="@Url.Action("BaeJournal", "BeaCoach")">My Journal</a></li>
+                            <li><a href="@Url.Action("BaeQuizzes", "BeaCoach")">Quizzes</a></li>
+                            <li><a href="@Url.Action("BaeGifts", "BeaCoach")">Gifts</a></li>
+                            <li><a href="@Url.Action("BaeAdvice", "BeaCoach")">Advice</a></li>
+                            <li><a href="@Url.Action("Calender", "BeaCoach")">Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("BaeProfile", "BeaCoach")"> View User Profile</a></li>
+                            <li><a href="@Url.Action("UpdateInfo", "BeaCoach")">Update User Profile</a></li>
+                            <li><a href="#">Log Out</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </nav>
     <center>
-        <h1 style="font-family:'Ink Free'">Bae my Date?</h1>
+        <h1 style="color:lightpink; font-family: 'Sofia'">Bae my Date?</h1>
         <br />
         <br />
         <h4>Where can I take Bae?</h4>
@@ -64,7 +96,10 @@
                     <td><input style="width:100%" id="Submit2" type="submit" value="Visit a museum" class="buttonLogin" /></td>
                 </tr>
                 <tr>
-                    <td><input style="width:100%" id="Submit3" type="submit" value="Have a romantic dinner" class="buttonLogin" /></td>
+                    @using (Html.BeginForm("RomanticDinner", "BeaCoach"))
+                    {
+                        <td><input style="width:100%" id="Submit3" type="submit" value="Have a romantic dinner" class="buttonLogin" /></td>
+                    }
                 </tr>
                 <tr>
                     <td><input style="width:100%" id="Submit4" type="submit" value="Go to the Zoo" class="buttonLogin" /></td>

@@ -13,13 +13,21 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
+        public ActionResult BaeProfile()
+        {
+            return View();
+        }
 
+        public ActionResult BaeScopes()
+        {
+            return View();
+        }
         //Open View for Journal
         public ActionResult BaeJournal()
         {
             return View();
         }
-        public ActionResult BaeCalender()
+        public ActionResult Calender()
         {
             return View();
         }
@@ -58,7 +66,7 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
-        public ActionResult Gifts()
+        public ActionResult BaeGifts()
         {
             return View();
         }

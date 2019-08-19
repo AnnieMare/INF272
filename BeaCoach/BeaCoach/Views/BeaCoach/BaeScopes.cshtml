@@ -14,6 +14,11 @@
             <link href="~/StyleSheet1.css" rel="stylesheet" />
             <meta name="viewport" content="width=device-width" />
             <title>BaeScopes</title>
+            <style>
+                h2, h4, p{
+                    color:white;
+                }
+            </style>
         </head>
         <body>
             <nav class="navbar navbar-inverse">
@@ -28,26 +33,40 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
+
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Date Ideas</a></li>
-                                    <li><a href="#">Horoscope</a></li>
-                                    <li><a href="#">My Journal</a></li>
-                                    <li><a href="#">Quizzes</a></li>
-                                    <li><a href="#">Messenger</a></li>
-                                    <li><a href="#">Gifts</a></li>
-                                    <li><a href="#">Planner</a></li>
+                                    <li><a href="@Url.Action("DateIdeas", "BeaCoach")">Date Ideas</a></li>
+                                    <li><a href="@Url.Action("BaeScopes", "BeaCoach")">Horoscope</a></li>
+                                    <li><a href="@Url.Action("BaeJournal", "BeaCoach")">My Journal</a></li>
+                                    <li><a href="@Url.Action("BaeQuizzes", "BeaCoach")">Quizzes</a></li>
+                                    <li><a href="@Url.Action("BaeGifts", "BeaCoach")">Gifts</a></li>
+                                    <li><a href="@Url.Action("BaeAdvice", "BeaCoach")">Advice</a></li>
+                                    <li><a href="@Url.Action("Calender", "BeaCoach")">Planner</a></li>
                                 </ul>
                             </li>
-                            <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                            <li class="active"><a href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@Url.Action("BaeProfile", "BeaCoach")"> View User Profile</a></li>
+                                    <li><a href="@Url.Action("UpdateInfo", "BeaCoach")">Update User Profile</a></li>
+                                    <li><a href="#">Log Out</a></li>
+
+                                </ul>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </nav>
-
             <center>
-                <h1 style="font-family: 'Sofia'">Bae Horoscopes</h1>
+                <h1 style="color:lightpink; font-family: 'Sofia'">Bae Horoscopes</h1>
             </center>
 
             <div>
@@ -58,7 +77,7 @@
                                 <td style="width: 149px; text-align: center;">
                                     <h2 style="text-align: center;"><img src="https://www.astrologyhub.com/wp-content/uploads/aries-810x810.png" alt="Image result for aries" width="161" height="160" /></h2>
                                     <h4 style="text-align: center;">Birthday: March 21 - April 19</h4>
-                                    <strong>Greatest Overall Compatibility:</strong>&nbsp;<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/libra/"><span class="color">Libra</span></a>,&nbsp;<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/leo/"><span class="color">Leo</span></a>
+                                    <p><strong>Greatest Overall Compatibility:</strong>&nbsp;<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/libra/"><span class="color">Libra</span></a>,&nbsp;<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/leo/"><span class="color">Leo</span></a></p>
                                     <p><strong>Strengths:</strong>&nbsp;Courageous, determined, confident, enthusiastic, optimistic, honest, passionate</p>
                                     <p><strong>Weaknesses:</strong>&nbsp;Impatient, moody, short-tempered, impulsive, aggressive</p>
                                 </td>

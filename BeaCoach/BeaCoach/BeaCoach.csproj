@@ -173,7 +173,6 @@
     <Content Include="Views\BeaCoach\BaeSignUp.cshtml" />
     <Content Include="Views\BeaCoach\BaeHome.cshtml" />
     <Content Include="Views\BeaCoach\UpdateInfo.cshtml" />
-    <Content Include="Views\BeaCoach\BaeCalender.cshtml" />
     <Content Include="Views\BeaCoach\BaeScopes.cshtml" />
     <Content Include="Views\BeaCoach\DateIdeas.cshtml" />
     <Content Include="Views\BeaCoach\RomanticDinner.cshtml" />
@@ -183,6 +182,9 @@
     <Content Include="Views\BeaCoach\BaeAdviceSingle.cshtml" />
     <Content Include="Views\BeaCoach\BaeAdviceMarried.cshtml" />
     <Content Include="Views\BeaCoach\BaeAdviceRelationship.cshtml" />
+    <Content Include="Views\BeaCoach\BaeProfile.cshtml" />
+    <Content Include="Views\BeaCoach\BaeCalender.cshtml" />
+    <Content Include="Views\BeaCoach\Calender.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

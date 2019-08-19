@@ -65,6 +65,7 @@
                         <option>Mrs.</option>
                         <option>Dr.</option>
                         <option>Prof.</option>
+                        <option>Mx.</option>
                     </select>
 
                 </td>
@@ -129,7 +130,10 @@
                 <td style="text-align:right;"></td>
                 <td></td>
                 <td style="text-align:right;">
+                    @using (Html.BeginForm("BaeHome", "BeaCoach"))
+                    {
                     <input id="Submit1" type="submit" value="Sign-up" class="buttonLogin" />
+                    }
                 </td>
             </tr>
         </table>

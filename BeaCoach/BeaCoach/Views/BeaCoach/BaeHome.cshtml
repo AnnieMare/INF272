@@ -49,18 +49,32 @@
                 <ul class="nav navbar-nav">
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Date Ideas</a></li>
-                            <li><a href="#">Horoscope</a></li>
-                            <li><a href="#">My Journal</a></li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="#">Messenger</a></li>
-                            <li><a href="#">Gifts</a></li>
-                            <li><a href="#">Planner</a></li>
+                            <li><a href="@Url.Action("DateIdeas", "BeaCoach")">Date Ideas</a></li>
+                            <li><a href="@Url.Action("BaeScopes", "BeaCoach")">Horoscope</a></li>
+                            <li><a href="@Url.Action("BaeJournal", "BeaCoach")">My Journal</a></li>
+                            <li><a href="@Url.Action("BaeQuizzes", "BeaCoach")">Quizzes</a></li>
+                            <li><a href="@Url.Action("BaeGifts", "BeaCoach")">Gifts</a></li>
+                            <li><a href="@Url.Action("BaeAdvice", "BeaCoach")">Advice</a></li>
+                            <li><a href="@Url.Action("Calender", "BeaCoach")">Planner</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                    <li class="active"><a href="@Url.Action("BaeHome", "BeaCoach")"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("BaeProfile", "BeaCoach")"> View User Profile</a></li>
+                            <li><a href="@Url.Action("UpdateInfo", "BeaCoach")">Update User Profile</a></li>
+                            <li><a href="#">Log Out</a></li>
+
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
         </div>

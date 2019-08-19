@@ -1,0 +1,107 @@
+﻿body {
+    background-image: url("https://images.unsplash.com/photo-1517330283827-2527c57981ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Sofia';
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background-color: ghostwhite;
+    color: black;
+    border-style: groove;
+    border-color: darkgray;
+    border-radius: 3px;
+}
+
+.mainheading {
+    font-family: 'Sofia';
+    font-size: 55px;
+    text-align: center;
+    color: black;
+    background-color: crimson;
+    border-top: solid, 2px, black;
+    border-bottom: solid, 2px, black;
+    opacity: 0.88;
+}
+
+.maindiv {
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.shop {
+    width: 46%;
+    float: left;
+    padding: 20px;
+    border: 1.5px;
+    border-color: grey;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.shop02 {
+    width: 46%;
+    float: right;
+    border: 1.5px;
+    border-color: grey;
+    border-radius: 3px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.itemsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.itemsTable tr:hover {
+    background-color: #ddd;
+}
+
+table {
+    font-family: 'Sofia', cursive;
+    background-color: darkgray;
+}
+
+td {
+    font-family: 'Sofia', cursive;
+}
+
+.itemsTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    padding-right: 12px;
+    padding-left: 6px;
+}
+
+h4 {
+    /*font-family: 'Sofia';
+    font-size: 30px;*/
+}
+
+img {
+    width: 100%;
+    border: solid, 3px, #476b6b;
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+    padding: 3px;
+}
+
+#purchaseBtn {
+    background-color: #555555;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}

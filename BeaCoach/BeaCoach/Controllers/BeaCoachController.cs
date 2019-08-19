@@ -19,7 +19,10 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
-
+        public ActionResult BaeCalender()
+        {
+            return View();
+        }
         //Open View for found Journal
         public ActionResult FindJournalEntry()
         {
@@ -55,7 +58,25 @@ namespace BeaCoach.Controllers
         {
             return View();
         }
-
-
+        public ActionResult Gifts()
+        {
+            return View();
+        }
+        public ActionResult BaeAdvice()
+        {
+            return View();
+        }
+        public ActionResult BaeAdviceSingle()
+        {
+            return View();
+        }
+        public ActionResult BaeAdviceMarried()
+        {
+            return View();
+        }
+        public ActionResult BaeAdviceRelationship()
+        {
+            return View();
+        }
     }
 }

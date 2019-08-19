@@ -128,10 +128,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AdviceStyleSheet.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\GiftsStyleSheet.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -176,6 +178,11 @@
     <Content Include="Views\BeaCoach\DateIdeas.cshtml" />
     <Content Include="Views\BeaCoach\RomanticDinner.cshtml" />
     <Content Include="Views\BeaCoach\FindJournalEntry.cshtml" />
+    <Content Include="Views\BeaCoach\BaeGifts.cshtml" />
+    <Content Include="Views\BeaCoach\BaeAdvice.cshtml" />
+    <Content Include="Views\BeaCoach\BaeAdviceSingle.cshtml" />
+    <Content Include="Views\BeaCoach\BaeAdviceMarried.cshtml" />
+    <Content Include="Views\BeaCoach\BaeAdviceRelationship.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

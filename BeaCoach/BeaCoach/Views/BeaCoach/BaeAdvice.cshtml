@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BaeAdvice</title>
+    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+    <link href="~/Content/AdviceStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h2 class="mainheading"> Advice </h2>
+    <div class="selection">
+        <h4>
+            Please select your relationship status
+        </h4><hr /><br />
+        
+        <a href="@Url.Action("BaeAdviceSingle", "BeaCoach")">
+            Single
+        </a>
+        <br /><br /><hr /><br />
+        <a href="@Url.Action("BaeAdviceRelationship", "BeaCoach")">
+            In a relationship
+        </a>
+        <br /><br /><hr /><br />
+        <a href="@Url.Action("BaeAdviceMarried", "BeaCoach")">Married</a>
+        <br /><br /><hr />
+
+
+    </div>
+    <div class="image01">
+        <img src="http://cd5vo46ju4834fu142zvmudg.wpengine.netdna-cdn.com/wp-content/uploads/Deep-Quotes-About-Love.png"
+             style="width:750px;height:390px;border-style:solid; border-width:3px; border-color:black;">
+
+    </div>
+</body>
+</html>
